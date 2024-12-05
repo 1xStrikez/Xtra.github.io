@@ -1,0 +1,22 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('https://cdn.discordapp.com/attachments/1314033250947039292/1314044850408263830/OIP.png?ex=67525722&is=675105a2&hm=1c13a5af9f178b9bc3cbe4b54b5f138317903e324c875bda7873c15dfacb4c98&'); /* Cambia 'ruta/al/fondo.jpg' por la URL de tu imagen de fondo */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.logo {
+    max-width: 50%; /* Ajusta este valor según el tamaño deseado del logo */
+}
