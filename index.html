@@ -65,10 +65,8 @@
     .staff {
       padding: 50px 20px;
       text-align: center;
-    }
-    .staff h2 {
-      font-size: 2em;
-      margin-bottom: 20px;
+      display: flex;
+      justify-content: center;
     }
     .staff-member {
       display: inline-block;
@@ -79,6 +77,10 @@
       padding: 10px;
       margin: 10px;
       text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .staff-member:hover {
+      transform: translateZ(10px);
     }
     .staff-member img {
       width: 100px;
