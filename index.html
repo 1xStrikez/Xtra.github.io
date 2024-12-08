@@ -1,15 +1,140 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Discord Bot</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MineNight</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      background: url('https://wallpaperaccess.com/full/2984711.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      height: 100vh;
+      padding: 20px;
+      text-align: center;
+    }
+    .logo {
+      margin-top: 20px;
+    }
+    .logo img {
+      width: 120px;
+      height: auto;
+      transition: transform 0.3s ease;
+    }
+    .logo img:hover {
+      transform: scale(1.1);
+    }
+    .content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .content h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+    .buttons {
+      display: flex;
+      gap: 20px;
+    }
+    .button {
+      padding: 10px 20px;
+      font-size: 1em;
+      color: white;
+      background: rgba(0, 0, 0, 0.8);
+      border: 1px solid white;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    .button:hover {
+      background: white;
+      color: black;
+    }
+    .staff {
+      padding: 50px 20px;
+      text-align: center;
+    }
+    .staff h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+    .staff-member {
+      display: inline-block;
+      background: rgba(0, 0, 0, 0.8);
+      border: 1px solid white;
+      border-radius: 10px;
+      width: 150px;
+      padding: 10px;
+      margin: 10px;
+      text-align: center;
+    }
+    .staff-member img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+    .staff-member h3 {
+      font-size: 1.2em;
+      margin: 0;
+    }
+    .staff-member p {
+      font-size: 1em;
+      margin: 0;
+    }
+    footer {
+      margin-top: 20px;
+    }
+    footer p {
+      font-size: 0.9em;
+      color: rgba(255, 255, 255, 0.7);
+    }
+    footer a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    footer a:hover {
+      color: #007BFF;
+    }
+  </style>
 </head>
 <body>
-    <div class="content-container">
-        <img src="https://cdn.discordapp.com/attachments/1314033250947039292/1314044338212311070/XtraX.png?ex=675256a7&is=67510527&hm=b0a8e247a40fafa1f26f8a0d4ccfe630516f9ae9f8aed7808ddde42d6630afbc&" alt="Logo de Discord" class="logo">
-        <p class="call-to-action">Agrega XtraBox a tu servidor</p>
+  <div class="container">
+    <div class="logo">
+      <img src="https://cdn.discordapp.com/icons/1258383389778776104/7a01ab620cdb5a8514b3f27fabd703c5.png?size=2048" alt="MineNight Logo">
     </div>
+    <div class="content">
+      <h1>¡Bienvenido a la web de MineNight!</h1>
+      <div class="buttons">
+        <a href="#" class="button">IP: MineNight.us</a>
+        <a href="https://discord.gg/vK5MtZk3f7" target="_blank" class="button">Únete a nuestro Discord</a>
+      </div>
+    </div>
+    <div class="staff">
+      <h2>Miembros del Staff</h2>
+      <div class="staff-member">
+        <img src="https://minotar.net/avatar/xStrikez_/100" alt="xStrikez_">
+        <h3>xStrikez_</h3>
+        <p>Owner</p>
+      </div>
+    </div>
+    <footer>
+      <p>&copy; 2024 MineNight. <a href="#">Términos y Condiciones</a></p>
+    </footer>
+  </div>
 </body>
 </html>
+
