@@ -1,142 +1,210 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MineCloudy</title>
-    <style>
-        /* Reset y configuraciones generales */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Arial', sans-serif;
-            color: white;
-            background-color: #1a1a1a;
-            background-image: url('https://vignette.wikia.nocookie.net/minecraftpocketedition/images/1/17/IMG_3976.PNG/revision/latest?cb=20161125122418');
-            background-size: cover;
-            background-attachment: fixed;
-            background-position: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        header {
-            background-color: rgba(0, 0, 0, 0.8);
-            width: 100%;
-            padding: 15px 20px;
-            text-align: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-        }
-
-        header h1 {
-            font-size: 2.5rem;
-            color: #00FF00;
-            text-shadow: 0 0 10px #00FF00;
-        }
-
-        main {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            padding: 20px;
-        }
-
-        /* Contenedor principal */
-        .container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            width: 80%;
-            margin-top: 20px;
-        }
-
-        /* Estilo de las cajas */
-        .box {
-            background: linear-gradient(145deg, #23272a, #2c2f33);
-            border-radius: 15px;
-            padding: 20px;
-            text-align: center;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6), -5px -5px 15px rgba(255, 255, 255, 0.1);
-        }
-
-        .box:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 20px rgba(0, 255, 0, 0.6);
-        }
-
-        .box img {
-            width: 60px;
-            margin-bottom: 15px;
-        }
-
-        .box a {
-            display: block;
-            color: #ffffff;
-            text-decoration: none;
-            font-size: 1.2rem;
-            font-weight: bold;
-            margin-top: 10px;
-        }
-
-        .box a:hover {
-            color: #00FF00;
-            text-shadow: 0 0 10px #00FF00;
-        }
-
-        footer {
-            width: 100%;
-            text-align: center;
-            background-color: rgba(0, 0, 0, 0.9);
-            padding: 10px 0;
-            margin-top: 40px;
-            font-size: 0.9rem;
-        }
-
-        footer p {
-            color: #777;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagina de MineCloudy</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: url('https://vignette.wikia.nocookie.net/minecraftpocketedition/images/1/17/IMG_3976.PNG/revision/latest?cb=20161125122418') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.8);
+      border-bottom: 2px solid #f39c12;
+    }
+    header .logo {
+      display: flex;
+      align-items: center;
+    }
+    header .logo img {
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+    }
+    header nav {
+      display: flex;
+      gap: 20px;
+    }
+    header nav a {
+      text-decoration: none;
+      color: white;
+      font-size: 1.2em;
+      transition: color 0.3s;
+    }
+    header nav a:hover {
+      color: #f39c12;
+    }
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+    }
+    .hero h1 {
+      font-size: 4em;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 1.5em;
+      margin-bottom: 40px;
+    }
+    .hero .button {
+      padding: 15px 30px;
+      font-size: 1.2em;
+      color: white;
+      background: #f39c12;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .hero .button:hover {
+      background: #e67e22;
+    }
+    .features {
+      display: flex;
+      justify-content: space-around;
+      padding: 50px 20px;
+      background: rgba(0, 0, 0, 0.9);
+    }
+    .feature {
+      text-align: center;
+      padding: 20px;
+      border: 1px solid #f39c12;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.1);
+      width: 30%;
+    }
+    .feature img {
+      width: 100px;
+      margin-bottom: 20px;
+    }
+    .feature h3 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+    .feature p {
+      font-size: 1em;
+    }
+    .staff {
+      text-align: center;
+      padding: 50px 20px;
+    }
+    .staff h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+    .staff-grid {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .staff-member {
+      text-align: center;
+      width: 150px;
+      padding: 10px;
+      border: 1px solid #f39c12;
+      border-radius: 10px;
+      background: rgba(0, 0, 0, 0.8);
+    }
+    .staff-member img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+    .staff-member h3 {
+      font-size: 1.2em;
+      margin: 0;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.8);
+      border-top: 2px solid #f39c12;
+    }
+    footer p {
+      font-size: 1em;
+      color: rgba(255, 255, 255, 0.7);
+    }
+    footer a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    footer a:hover {
+      color: #f39c12;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>EnderyClub</h1>
-    </header>
-    <main>
-        <div class="container">
-            <!-- Cuadro IP -->
-            <div class="box">
-                <img src="https://art.pixilart.com/1c020ec9c3ce31a.png" alt="Minecraft IP Logo">
-                <h2>Conéctate al servidor</h2>
-                <a href="#" onclick="copyToClipboard('MineCloudy.us')">IP: MineCloudy.us</a>
-            </div>
+  <header>
+    <div class="logo">
+      <img src="https://cdn.discordapp.com/icons/1300951643126370374/7d2170e7a28306eb64b567a8ecbdf51b.png" alt="Logo">
+      <h1>MineCloudy</h1>
+    </div>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#features">Características</a>
+      <a href="#staff">Staff</a>
+    </nav>
+  </header>
 
-            <!-- Cuadro Discord -->
-            <div class="box">
-                <img src="https://static.vecteezy.com/system/resources/previews/006/892/625/non_2x/discord-logo-icon-editorial-free-vector.jpg" alt="Discord Logo">
-                <h2>Únete a nuestro Discord</h2>
-                <a href="https://discord.gg/wZ7Y3ZpkZF" target="_blank">¡Haz clic aquí!</a>
-            </div>
-        </div>
-    </main>
-    <footer>
-        <p>© 2024 MineCloudy.us Todos los derechos reservados.</p>
-    </footer>
+  <div class="hero">
+    <h1>Bienvenido a MineCloudy</h1>
+    <p>La mejor experiencia PvP en Minecraft</p>
+    <button class="button">Conéctate: MineCloudy.us</button>
+  </div>
 
-    <script>
-        // Copiar IP al portapapeles
-        function copyToClipboard(text) {
-            navigator.clipboard.writeText(text).then(() => {
-                alert("IP copiada al portapapeles: " + text);
-            });
-        }
-    </script>
+  <section id="features" class="features">
+    <div class="feature">
+      <img src="https://via.placeholder.com/100" alt="Icono 1">
+      <h3>Eventos Únicos</h3>
+      <p>Participa en nuestros eventos exclusivos cada semana.</p>
+    </div>
+    <div class="feature">
+      <img src="https://via.placeholder.com/100" alt="Icono 2">
+      <h3>Mapas Épicos</h3>
+      <p>Explora arenas diseñadas para los mejores combates.</p>
+    </div>
+    <div class="feature">
+      <img src="https://via.placeholder.com/100" alt="Icono 3">
+      <h3>Comunidad Activa</h3>
+      <p>Únete a nuestra comunidad de jugadores apasionados.</p>
+    </div>
+  </section>
+
+  <section id="staff" class="staff">
+    <h2>Conoce al Staff</h2>
+    <div class="staff-grid">
+      <div class="staff-member">
+        <img src="https://minotar.net/avatar/xStrikez_/100" alt="xStrikez_">
+        <h3>xStrikez_</h3>
+        <p>Dueño</p>
+      </div>
+      <div class="staff-member">
+        <img src="https://minotar.net/avatar/Steve/100" alt="Steve">
+        <h3>GAMERMANITO</h3>
+        <p>Dueño</p>
+      </div>
+      <div class="staff-member">
+        <img src="https://minotar.net/avatar/Alex/100" alt="Alex">
+        <h3>Proximo staff..</h3>
+        <p>Ayudante</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 MineCloudy.us Todos los derechos reservados. <a href="#">Términos y Condiciones</a></p>
+  </footer>
 </body>
 </html>
