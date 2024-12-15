@@ -4,17 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MineCloudy</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
     @font-face {
       font-family: 'Minecraftia';
-      src: url('https://fontmeme.com/fonts/minecrafter-font/'); /* Reemplazar con la URL de la fuente */
+      src: url('https://example.com/minecraftia.ttf'); /* Cambiar URL a la fuente Minecraft */
     }
 
     body {
       margin: 0;
       font-family: 'Minecraftia', Arial, sans-serif;
-      background: linear-gradient(135deg, #1a1a1a, #333);
+      background-color: #1a1a1a;
       color: white;
     }
 
@@ -23,7 +22,7 @@
       justify-content: space-between;
       align-items: center;
       padding: 20px 50px;
-      background: #111;
+      background: #0f0f0f;
       border-bottom: 2px solid #f39c12;
     }
 
@@ -40,7 +39,7 @@
 
     header nav {
       display: flex;
-      gap: 30px;
+      gap: 20px;
     }
 
     header nav a {
@@ -56,21 +55,21 @@
 
     .hero {
       text-align: center;
-      padding: 120px 20px;
+      padding: 150px 20px;
       background: url('https://i.imgur.com/3XoOM5W.png') no-repeat center;
       background-size: cover;
-      background-attachment: fixed;
+      color: white;
     }
 
     .hero h1 {
       font-size: 4em;
-      margin-bottom: 20px;
       color: #f39c12;
+      margin-bottom: 20px;
     }
 
     .hero p {
       font-size: 1.5em;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
     }
 
     .hero .button {
@@ -93,6 +92,7 @@
       justify-content: space-between;
       gap: 20px;
       padding: 60px 50px;
+      background: #1a1a1a;
     }
 
     .feature {
@@ -102,6 +102,7 @@
       border-radius: 15px;
       background: rgba(255, 255, 255, 0.1);
       transition: transform 0.3s, box-shadow 0.3s;
+      flex: 1;
     }
 
     .feature:hover {
@@ -120,10 +121,15 @@
       margin-bottom: 15px;
     }
 
+    .feature p {
+      font-size: 1em;
+      color: #ddd;
+    }
+
     footer {
       text-align: center;
       padding: 20px;
-      background: #111;
+      background: #0f0f0f;
       border-top: 2px solid #f39c12;
     }
 
@@ -153,6 +159,7 @@
       <a href="#">Inicio</a>
       <a href="#features">Características</a>
       <a href="#staff">Staff</a>
+      <a href="#contact">Contacto</a>
     </nav>
   </header>
 
